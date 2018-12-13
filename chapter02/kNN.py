@@ -122,18 +122,18 @@ def classifyPerson():
     gameTime = 1.0
     flyingMiles = 1.0
     iceCreamRatio = 1.0
-    while (gameTime > 0 & flyingMiles > 0 & iceCreamRatio > 0):
-        gameTime = float(input(
-            "percentage of time spent playing games?(0~100)"))
-        flyingMiles = float(input(
-            "ferquent fileer miles earned per year?"))
-        iceCreamRatio = float(input(
-            "liters of iceCream consumed per year?"))
-        datingDataMat , datingLabels = file2matrix('dataSet\datingTestSet2.txt')
-        normMat, valRange, minVals = autoNorm(datingDataMat)
-        inputArr = np.array([flyingMiles, gameTime, iceCreamRatio])
-        classifierRes = classify0((inputArr-minVals)/valRange, normMat, datingLabels, 3)
-        print("your feeling of this person: ", resultList[classifierRes - 1])
+
+    gameTime = float(input(
+        "percentage of time spent playing games?(0~100)"))
+    flyingMiles = float(input(
+        "ferquent fileer miles earned per year?"))
+    iceCreamRatio = float(input(
+        "liters of iceCream consumed per year?"))
+    datingDataMat , datingLabels = file2matrix('dataSet\datingTestSet2.txt')
+    normMat, valRange, minVals = autoNorm(datingDataMat)
+    inputArr = np.array([flyingMiles, gameTime, iceCreamRatio])
+    classifierRes = classify0((inputArr-minVals)/valRange, normMat, datingLabels, 3)
+    print("your feeling of this person: ", resultList[classifierRes - 1])
 
 
 def main():
