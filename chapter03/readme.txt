@@ -15,3 +15,5 @@ kNN算法不能给出数据的内在含义，而决策树的主要优势就在�
 文件说明：
 decisionTree.py：是通过构造决策树实现鱼类划分
 TreeClassifierSavedfile.txt 是存储的决策树的结果
+lensesPridiction.py: 加载隐形眼睛数据，并执行图像的绘制
+treePlotter.py: 决策树的图像绘制
