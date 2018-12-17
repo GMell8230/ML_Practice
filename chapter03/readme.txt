@@ -17,3 +17,4 @@ decisionTree.py：是通过构造决策树实现鱼类划分
 TreeClassifierSavedfile.txt 是存储的决策树的结果
 lensesPridiction.py: 加载隐形眼睛数据，并执行图像的绘制
 treePlotter.py: 决策树的图像绘制
+lensesTree.png： 决策树绘制的图像
